@@ -1,0 +1,38 @@
+
+
+/* stilo div_carrinho */ 
+
+#div_carrinho{
+    position: fixed;
+    top: 70px;
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(255,215,142);
+    width: 25%;
+    height: 87vh;
+    z-index: 1;
+    margin-left: 10px;
+    border-radius: 20px;
+    transition: all 0.7s;
+    transform: translateX(-150%);
+}
+
+#div_carrinho li{
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    list-style: none;
+}
+
+
+@media screen and (max-width: 850px) {
+    #div_carrinho{
+        width: 100%;
+        height: 100vh;
+        padding: 0px;
+        top: 60px;
+        border-radius: 0px;
+        margin: 0px;
+        background-color: white;
+    }
+}

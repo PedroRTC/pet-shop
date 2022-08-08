@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">  
+    <link rel="stylesheet" href="pasta.css/style.css">
+    <link rel="stylesheet" href="pasta.css/anime.css">
+    <link rel="stylesheet" href="pasta.css/produto.css">
+    <link rel="stylesheet" href="pasta.css/carrinho.css">
+    <link rel="stylesheet" href="pasta.css/contato.css">
+    <title>Pet-shoop</title>
+</head>    
+  
+<body>
+
+  <a id="INICIO"></a>
+    <nav id="menu">
+      <a  href="#INICIO" id="container_logo">
+          <img  id="logo"src="img/logo-pet.png" alt=""><h1 id="title">PetShop</h1>
+      </a>
+
+      <ul id="items" >
+          <li class="item"><a href="#INICIO">Inicio</a><hr class="hr_menu"></li>
+          <li class="item"><a href="#PRODUTO">Produtos</a><hr class="hr_menu"></li>
+          <li class="item"><a href="#SERVICO">Serviços</a><hr class="hr_menu"></li>
+          <li class="item"> <a href="#EQUIPE">Equipe</a><hr class="hr_menu"></li>
+          <li class="item"> <a href="#CONTATO">Contato</a><hr class="hr_menu"></li>
+      </ul>
+      <div id="div_user">
+          <i class="fa fa-shopping-cart fa-2x" id="button_carrinho" aria-hidden="true"></i>
+          <i class="fa fa-user  fa-2x" aria-hidden="true"></i>
+          <i class="fa fa-bars fa-2x"  aria-hidden="true"></i>
+          
+      </div>
+      <hr id="hr_pc">
+    </nav>
+
+    <header id="cabe">
+          <div id="cont_cabe">
+              <h2><span>Seu Pet</span> merece sempre o melhor tratamento e a melhor alimentação.</h2>
+              <a href="#PRODUTO" id="button_produto">Produto</a>
+          </div>
+            <!--div_carrinho-->
+            <div id="div_carrinho">
+               <h1 id="title">Carrinho</h1>
+               <div id="produto_carrinho">
+                
+               </div>
+            </div>
+
+
+    </header>
+
+  <div id="main">
+      <section id="main_secao_animais" class="todas_secao">
+
+        <div id="div_img_animais" class="todas_div" data-anime="left">
+            <div id="img_animais">
+                <img src="img/animais_01.png">
+                <img src="img/animais_02.png">
+                <img src="img/animais_03.png">
+                <img src="img/animais_04.png">
+                <img src="img/animais_05.png">
+            </div>
+
+            <section id="bolinha_animais"><hr><hr><hr><hr><hr></section>
+
+            <section id="button_animais">
+              <button id="button_esquerda"></button>
+              <button id="button_direita"></button>
+            </section>
+        </div>
+
+        <div id="desc_animais" class="todas_div" data-anime="down">
+            <h3><strong>Nossa equipe</strong> trabalha para essas fofuras, isso é o que nos da ânimo todos os dias.</h3>
+        </div>
+      </section>
+
+      <section id="racao_gato"  class="todas_secao">
+
+         <div id="div_desc_gato"  class="todas_div" data-anime="left">
+          <img src="img/img_raçao_gato01.png" id="img_racao_gato">
+            <h4>Magnus Cat Mix</h4>
+            <p>Magnus Cat Premium Gatos Adultos Com Partículas Recheadas 10 kg</p>
+            <span>R$99,90<span><br/>
+              <button>Comprar</button>
+         </div>
+         <div id="img_gato"  class="todas_div" data-anime="down"></div>
+
+      </section>
+        
+      <section id="racao_cachorro"  class="todas_secao">
+
+        <div id="img_cachorro"  class="todas_div" data-anime="left"></div>
+
+        <div id="div_desc_cachorro"  class="todas_div" data-anime="down">
+          <img src="img/img_raçao_cachorro01.png" id="img_racao_chachorro">
+            <h4>Special Dog Ultralife</h4>
+            <p>Ração Special Dog Ultralife Frango e Arroz - Cachorro Filhote de Raça Pequena 3 kg</p>
+            <span>R$52,90<span><br/>
+              <button>Comprar</button>
+            
+         </div>
+      </section>
+
+      <a id="PRODUTO"></a>
+      <div id="main_produtos">
+        
+        <h2 id="title_secao" data-anime="left"><span>Nossos</span> Produtos</h2>
+        <div id="div_erro"></div>
+        <div id="produtos" data-anime="down"></div>
+      </div>
+
+      <a id="SERVICO"></a>
+      <div id="servico">
+        <h2 id="title_secao" data-anime="left">Nossos <span>Serviços</span> </h2>
+
+        <div id="s1" data-anime="down">
+          <img src="img/banho.png" alt="">
+          <h3>spa e tosa</h3>
+          <button>Mais informação</button>
+        </div>
+
+        <div id="s2" data-anime="down" >
+          <img src="img/exer.png" alt="">
+          <h3>exercício e atividade</h3>
+          <button>Mais informação</button>
+        </div>
+
+        <div  id="s3" data-anime="down">
+          <img src="img/vete.png" alt="">
+          <h3>assistência médica</h3>
+          <button>Mais informação</button>
+        </div>
+
+        <div  id="s4" data-anime="down">
+          <img src="img/pet-alimentação.png" alt="">
+          <h3>Alimentação saudavel</h3>
+          <button>Mais informação</button>
+        </div>
+
+        <div  id="s5" data-anime="down">
+          <img src="img/casa-animais.png" alt="">
+          <h3>hospedagem de animais</h3>
+          <button>Mais informação</button>
+        </div>
+
+        <div  id="s6" data-anime="down">
+          <img src="img/treinamento.png" alt="">
+          <h3>treinamento de animais</h3>
+          <button>Mais informação</button>
+        </div>
+
+
+        
+      </div>
+
+      <a id="EQUIPE"></a>
+      <div id="equipe">
+       
+        <h2 id="title_secao" data-anime="left">Nossa <span>Equipe</span></h2>
+
+         <div class="funcionario" data-anime="down">
+          <div class="img_funcionario" id="f1">
+            <span class="redes">
+              <section>
+                <i class="fa fa-instagram " aria-hidden="true"></i>
+                <i class="fa fa-linkedin " aria-hidden="true"></i>
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+              </section>
+            </span>
+          </div>
+          <p class="nome_funci">Alan Silva</p>
+          <p class="cargo"><strong>Cargo:</strong> Medico Veterinário</p>
+         </div>
+
+         <div class="funcionario" data-anime="down">
+             <div class="img_funcionario" id="f2">
+              <span class="redes">
+                  <section>
+                    <i class="fa fa-instagram " aria-hidden="true"></i>
+                    <i class="fa fa-linkedin " aria-hidden="true"></i>
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                  </section>
+                
+              </span>
+             </div>
+              <p class="nome_funci">Marcos Ramos</p>
+              <p class="cargo"><strong>Cargo:</strong> Gerente e Medico Veterinário</p>
+         </div>
+
+         <div class="funcionario" data-anime="down">
+           <div class="img_funcionario" id="f3">
+            <span class="redes">
+              <section>
+                <i class="fa fa-instagram " aria-hidden="true"></i>
+                <i class="fa fa-linkedin " aria-hidden="true"></i>
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+              </section>
+            </span>
+           </div>
+           <p class="nome_funci">Érica Diaz</p>
+           <p class="cargo"><strong>Cargo:</strong> Adestradora de animais</p>
+         </div>
+
+         <div class="funcionario" data-anime="down">
+           <div class="img_funcionario" id="f4">
+            <span class="redes">
+              <section>
+                <i class="fa fa-instagram " aria-hidden="true"></i>
+                <i class="fa fa-linkedin " aria-hidden="true"></i>
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+              </section>
+            </span>
+           </div>
+           <p class="nome_funci">Lucia Martins</p>
+           <p class="cargo"><strong>Cargo:</strong> Medica Veterinária</p>
+         </div>
+
+      </div>
+
+      <a id="CONTATO"></a>
+      <div id="main_Contato">
+       
+          <div id="container_contato">
+            <div id="div_img_form" class="filho_contato" data-anime="left"></div>
+
+             <div id="div_form" class="filho_contato" data-anime="down">
+              
+                <form action="">
+                  <h2>Contato</h2>
+                 <p><input type="text" placeholder="Nome"></p>
+                  <p><input type="email" placeholder="Email"></p>
+                  <p><input type="phone" placeholder="Telefone"></p>
+                  <textarea name="" id="" cols="30" rows="10" placeholder="Mensagem"></textarea>
+                  <button>Enviar menssagem</button>
+                </form>
+             </div>
+            
+          </div>
+      </div>
+
+      <footer id="rodape">
+        <section id="redes_rodape">
+          <a href="">Facebook</a>
+          <a href="" >Instagram</a>
+          <a href="" >Twitter</a>
+          <a href="">Linkedin</a>
+          <a href="" >Email</a>
+        </section>
+
+        <p id="link_portifolio">Veja mais projeto aqui <a href="">portifolio-pedro.netlify.app</a></p>
+      </footer>
+  </div>
+ 
+  
+
+    <script src="pasta.js/http.js"></script>
+    <script src="pasta.js/script.js"></script>
+    <script src="pasta.js/anime.js"></script>
+    <script src="pasta.js/produtos.js"></script>
+    <script src="pasta.js/Carrinho.js"></script>
+    <script src="pasta.js/menu.js"></script>
+    
+</body>
+</html>

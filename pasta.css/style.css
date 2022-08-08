@@ -1,0 +1,813 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Trispace&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+  background-color: #FFDEBF;
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar{
+    width: 5px;
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: orange;
+    border-radius: 20px;
+}
+
+
+#cabe{
+   height:100vh;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   background-image: url("../img/fundo-cabe.png");
+   background-size: cover;
+   background-position: 50%;
+   background-attachment: fixed;
+ 
+}
+
+
+
+
+#menu{
+    margin: auto;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 5px gainsboro;
+    padding: 10px 0px;
+    background-color: white;
+   z-index:10;
+}
+
+#hr_pc{
+    text-align: left;
+    left: 0px;
+    position: absolute;
+    top:60px;
+    width: 0%;
+    height: 2px;
+    border: none;
+    background-color: orange;
+   
+}
+
+#container_logo{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    text-decoration: none;
+ 
+}
+
+
+
+#logo{
+    width:40px ;
+    height: 40px;
+    margin-left: 30px;
+}
+
+#title{
+    font-family: 'Dancing Script', cursive;
+    font-size:23pt;
+    color: #d73103;
+}
+
+#title_secao{
+    padding-top: 20px;
+    font-family: 'Trispace', sans-serif;
+    font-size: 30pt;
+    letter-spacing: 1px;
+    color:grey ;
+}
+
+#title_secao span{
+    color: orange;
+}
+
+#items{
+   list-style: none;
+   text-align: center;
+  display: flex;
+   width: 80%;
+   
+}
+
+.item{
+    margin: 0px 15px;
+}
+ 
+
+.hr_menu{
+    width:0%;
+    height:3px ;
+    border: none;
+   background-image: linear-gradient(45deg,#d73103,orange);
+    transition: all 0.5s;
+    border-radius: 20px;
+}
+
+
+.item a{
+    text-decoration:none ;
+    color: #333;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 14pt;
+    transition: all 0.5s;
+}
+
+
+.item a:hover ~ .hr_menu{
+    width:100%;
+}
+
+
+#div_user{
+  
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    gap: 30px;
+    transform: scale(0.8);
+    
+}
+
+#div_user i{
+    color: #d73103;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.fa-bars{
+    display: none;
+}
+
+#div_user i:hover{
+    color: orange;
+}
+
+
+
+#cont_cabe{
+  padding: 20px;
+  width: 40%;
+  margin: 20px 50px ;
+ 
+}
+
+#cont_cabe h2{
+    font-family: 'Fredoka One', cursive;
+    letter-spacing: 1px;
+    font-size: 32pt;
+    color: gray;
+  
+}
+
+#cont_cabe span{
+    color:orange;
+    font-size: 40pt;
+}
+
+
+#button_produto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 2px;
+    text-decoration: none;
+    font-family: 'Fredoka One', cursive;
+    font-size: 16pt;
+    width: 150px;
+    height: 50px;
+    background-color: white;
+    color: orange;
+    margin-top: 25px;
+    transition: all 0.5s;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    border: 2px solid orange;
+    
+    
+}
+
+#button_produto:hover{
+    background-color: #FC911E;
+    color: white;
+}
+
+
+
+.todas_secao{
+   margin: auto;
+   display: flex;
+   align-items: center;
+   width: 100%;
+   height:auto;
+   margin-bottom: 100px;
+   margin-top: 50px;
+   
+ 
+}
+
+.todas_div{
+  margin: auto;
+  width:90%;
+  height:90%;
+  padding: 20px 0px;
+  text-align: center;
+  background-size: cover;
+  
+
+}
+
+.todas_div h4{
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-size: 30pt;
+    font-family: 'Fjalla One', sans-serif;
+    color:#FC911E;
+
+}
+
+
+.todas_div p{
+    margin: auto;
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10pt;
+    font-weight: 600;
+    color: rgb(77, 77, 77);
+    letter-spacing: 1px;
+    width:70%;
+    text-align: center;
+}
+
+.todas_div span{
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: 900;
+    font-size: 20pt;
+    letter-spacing: 2px;
+    color: #333;
+    
+}
+
+
+#img_animais{
+    margin: auto;
+    width: 90%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    overflow:hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    border-top-left-radius: 40%;
+    border-bottom-right-radius: 30%;
+    border-bottom-left-radius:60% ;
+    border-top-right-radius:70% ;
+    transition: all 0.8s;
+    border: 3px  dashed gray;
+    
+}
+
+#img_animais:hover{
+    border-radius: 0px;
+ }
+
+
+#img_animais img{
+   width: 98.8%;
+   height: 98.8%;
+   flex: none;
+   scroll-snap-align: start;
+   background-size: cover;
+   cursor: pointer;
+   border-top-left-radius: 40%;
+   border-bottom-right-radius: 30%;
+   border-bottom-left-radius:60% ;
+   border-top-right-radius:70% ;
+   transition: all 0.5s;
+   border: 3px solid orange;
+   
+  
+}
+
+#img_animais img:hover{
+   border-radius: 0px;
+ }
+
+
+
+#bolinha_animais{
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    gap: 10px;
+   
+}
+
+#bolinha_animais hr{
+    width:7px ;
+    height: 7px;
+    border: none;
+    border-radius:50% ;
+    border: 0.5px solid #E04B33;
+    transition: all 0.5s;
+    opacity: 0.8;
+}
+
+#button_animais{
+    text-align: right;
+    padding: 0px 30px;
+}
+
+#button_animais button{
+    width:30px ;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    border: 1px solid orange;
+    background-color: white;
+    cursor: pointer;
+    opacity:0.7 ;
+    transition: all 0.5s;
+    margin: 0px 2px;
+}
+
+#button_animais button:hover{
+    opacity: 1;
+}
+
+#button_esquerda{
+  background-image: url("../img/seta-esq.png");
+  background-size: cover;
+}
+
+#button_direita{
+    background-image: url("../img/seta-dit.png");
+    background-size: cover;
+}
+
+
+
+#desc_animais h3{
+    margin: auto;
+    font-family: 'Fredoka One', cursive;
+    font-size: 35pt;
+    width: 80%;
+    text-align: left;
+    letter-spacing: 1px;
+    color:gray;
+}
+
+#desc_animais strong{
+    color: orange;
+}
+
+#img_racao_gato{
+    width: 300px;
+    height: 300px;
+    transition: all 2s;
+    cursor: pointer;
+    
+}
+
+
+#img_racao_gato:hover{
+    content:url('../img/img_raçao_gato02.png');
+}
+
+
+#img_gato{
+    width: 100%;
+    height:80vh;
+   background-image: url("/img/img-gato.png");
+   background-size: cover;
+   background-position: 50% 50%;
+}
+
+#div_desc_gato button{
+    margin-top: 10px;
+    width: 230px;
+    height: 115px;
+    font-family: 'Fredoka One', cursive;
+    font-size: 18pt;
+    letter-spacing: 2px;
+    text-align: right;
+    padding: 0px  40px;
+    border:none;
+    background-color: transparent;
+    background-image: url("../img/button_peixe.png");
+    background-size: cover;
+    background-position: 50% 50%;
+    cursor: pointer;
+    color: white;
+    transition: all 0.5s;
+}
+
+#div_desc_gato button:hover{
+    transform: rotateZ(-10deg);
+
+}
+
+
+#img_racao_chachorro{
+    width: 300px;
+    height: 300px;
+    transition: all 2s;
+    cursor: pointer;
+    
+}
+
+#img_racao_chachorro:hover{
+    content:url('../img/img_raçao_cachorro02.png');
+}
+
+#img_cachorro{
+    width: 100%;
+    height: 80vh;
+   background-image: url("/img/img-cachorro.png");
+   background-size: cover;
+   background-position: 50% 50%;
+}
+
+
+#div_desc_cachorro button{
+    margin-top: 10px;
+    width: 230px;
+    height: 115px;
+    font-family: 'Fredoka One', cursive;
+    font-size: 18pt;
+    letter-spacing: 2px;
+    border:none;
+    background-color: transparent;
+    background-image: url("../img/button-osso.png");
+    background-size: cover;
+    background-position: 50% 50%;
+    cursor: pointer;
+    color: white;
+    transition: all 0.5s;
+}
+
+
+#div_desc_cachorro button:hover{
+    transform: rotateZ(10deg);
+}
+
+#servico{
+  text-align: center;
+  margin: 30px 0px;
+  padding-top: 30px;
+}
+
+#servico h2{
+    margin-bottom: 30px;
+}
+
+#servico div{
+    margin: auto;
+    display:inline-block;
+    width: 230px;
+    height: 230px;
+    background-color: #fdc38d;
+    margin: 10px 40px;
+    padding: 40px 30px 20px 30px;
+    color:#333;
+    font-family: 'Fjalla One', sans-serif;
+    transition: all 0.5s;
+}
+
+#servico div:hover{
+    border-radius: 0%;
+}
+
+#servico img{
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+    border-radius:50%;
+    background-color: orange;
+}
+
+#s1{
+    border-radius:20% 30% 60%  25%;
+}
+
+#s2{
+    border-radius: 50% 10% 70% 40%;
+}
+
+#s3{
+    border-radius: 60% 10% 50% 30%;
+}
+
+
+#s4{
+    border-radius:  10% 70% 30%  40%;
+}
+
+#s5{
+    border-radius: 20% 10% 70% 30%;
+}
+
+#s6{
+    border-radius: 50% 20% 60% 30%;
+}
+
+
+
+#servico button{
+    border: none;
+    width: 130px;
+    height: 40px;
+    background-color: transparent;
+    border: 2px solid rgb(190, 124, 2);
+    font-weight: 700;
+    color: rgb(102, 67, 2);
+    margin-top: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius:20px ;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+#servico button:hover{
+   background-color: white;
+}
+
+#equipe{
+    text-align: center;
+    background-color: white;
+    padding: 50px 0px;
+}
+
+
+
+.funcionario{
+    width: 300px;
+    height: 420px;
+    display: inline-block;
+    margin: 20px 10px;
+}
+
+
+.nome_funci{
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 10px 5px 5px 5px;
+    color: #333;
+    font-weight: 600;
+    letter-spacing: 1px;
+    
+}
+
+.cargo{
+    font-family: 'Josefin Sans', sans-serif;
+    color:rgb(102, 67, 2);
+   
+}
+
+.cargo strong{
+    color: orange;
+}
+
+.img_funcionario{
+    display: flex;
+    justify-content: center;
+    align-items:flex-end;
+    width: 100%;
+    height: 85%;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-color: rgba(255, 166, 0, 0.192);
+    transition: all 0.7s;
+    cursor: pointer;
+}
+
+.img_funcionario:hover{
+    background-color:orange;
+}
+
+
+.redes{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 0%;
+  background-color: rgba(0, 0, 0, 0.671);
+  transition: all 0.3s;
+} 
+
+.redes section{
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    display: none;
+    opacity: 0;
+}
+
+.redes i{
+  color: white;
+  transform: scale(1.4);
+  transition: all 0.5s;
+
+  
+}
+
+.redes i:hover{
+    color: orange;
+}
+
+#f1{
+    background-image: url("../img/funci-01.png");
+}
+
+#f2{
+    background-image: url("../img/funci-02.png");
+}
+
+#f3{
+    background-image: url("../img/funci-03.png");
+}
+
+#f4{
+    background-image: url("../img/funci-04.png");
+}
+
+
+#rodape{
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 30px;
+    height:auto ;
+    background-color: white;
+    background-image: url("../img/fundo-rodape.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+;
+}
+
+#redes_rodape{
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+#redes_rodape a{
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+    color:#333;
+    padding: 10px 0px;
+    margin: 10px 10px;
+    border: 2px solid #927A4B;
+    width: 120px;
+    height: 15px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius:20px ;
+    color: #927A4B;
+    transition: all 0.3s;
+   
+}
+
+#redes_rodape a:hover{
+    background-color: #FC911E;
+    color: #333;
+}
+
+#link_portifolio{
+    color: gray;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 14pt;
+}
+
+#link_portifolio a{
+    color: #FC911E;
+    transition: all 0.3s;
+    
+}
+
+#link_portifolio a:hover{
+    color:blue;
+}
+
+
+
+
+
+@media screen and (max-width: 1300px) {
+
+    #title{
+        font-size: 14pt;
+    }
+    #cont_cabe{
+        padding: 0px;
+        width: 60%;
+        margin: 20px 10px ;
+    }
+    #cont_cabe h2{
+       font-size: 25pt;
+    } 
+
+    #desc_animais h3{
+        font-size: 25pt;
+    }
+
+    .todas_secao{
+        margin: auto;
+        display:inline-block;
+        text-align: center;
+    }
+     
+
+    
+
+    #servico div{
+        margin: 10px 20px;
+    }
+
+    #img_gato{
+        height: 90vh;
+        width:70%;
+    }
+
+    #img_cachorro{
+        height: 90vh;
+        width: 70%;
+    }
+
+
+   
+}
+
+@media screen and (max-width:830px) {
+
+    #title_secao{
+        font-size: 23pt;
+    }
+
+    #items{
+       padding: 20px 0px;
+        text-align: center;
+        position: fixed;
+        display: block;
+        background-color: white;
+        top: 60px;
+        width:100% ;
+        transform: translateX(-150%);
+        transition: all  0.5s;
+        z-index: 0;
+    }
+
+    .item{
+        margin: auto;
+        width: 20%;
+        margin-bottom: 15px;
+       
+    }
+
+    .fa-bars{
+        display: inline;
+    }
+
+    #img_animais{
+        width: 100%;
+        height: 100%;
+    }
+
+    #img_gato{
+        height: 70vh;
+        width:100%;
+    }
+
+    #img_cachorro{
+        height: 70vh;
+        width: 100%;
+    }
+
+   
+}
