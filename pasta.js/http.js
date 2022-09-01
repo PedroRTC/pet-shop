@@ -10,7 +10,7 @@ function fetchJson(url, options){
   }
 
   function listaProdutos(){
-    return fetchJson("https://projeto-pet.netlify.app/produto.json")
+    return fetchJson("http://127.0.0.1:5500/produto.json")
   }
 
   
