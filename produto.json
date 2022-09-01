@@ -1,0 +1,51 @@
+
+
+[
+ 
+    {
+       "img":"img/1.png",
+       "desc":"Origens Class 15 Kg",
+       "preço":"R$ 129,90",
+       "sobre": "Origens Class Carne e Frango para Cães Adultos é uma linha de alimentos Premium Especial formulada por especialistas e sob os conceitos mais atuais da nutrição de cães, consistindo em um alimento de alta qualidade."
+    },
+   
+    {
+       "img":"img/2.png",
+       "desc":"Pedigree  3kg",
+       "preço":"R$ 42,90",
+       "sobre": "Com Vitaminas e Minerais que o ajudam a se manter forte e saudável. Com Fibras Naturais para uma digestão ótima e fezes firmes. Proteína da carne e balanço ideal de aminoácidos para músculos fortes. "
+    },
+   
+    {
+       "img":"img/3.png",
+       "desc":"Gran Plus  10,1 Kg",
+       "preço":"R$ 189,90",
+       "sobre": "Ração Gran Plus Gourmet Cães Adultos Raças Médias e Grandes Salmão e Frango produzida com ingredientes selecionados, oferece ao seu cãozinho uma alimentação equilibrada e nutritiva."
+    },
+   
+    {
+       "img":"img/4.png",
+       "desc":" Nestlé Purina 15kg",
+       "preço":"R$258,56",
+       "sobre": "Indicada para cachorro filhotes de raças médias. Promove uma ótima absorção de nutrientes. Contém anticorpos naturais do colostro. Fortalece a microflora intestinal. Prolongam a proteção natural."
+    },
+   
+    {
+       "img":"img/5.png",
+       "desc":"Pro plan 7.5kg",
+       "preço":"R$203,50",
+       "sobre": "É um alimento destinado a cães adultos e filhotes de todas as raças, como coadjuvante no tratamento de doenças osteoarticulares."
+    },
+   
+    {
+       "img":"img/6.png",
+       "desc":" Premier Shih Tzu  7,5 Kg",
+       "preço":"R$ 208,99",
+       "sobre": "Fabricado com ingredientes nobres, essa ração visa minimizar os principais problemas da raça shih tzu adultos."
+    }
+    
+   ]
+   
+   
+   
+   
