@@ -65,30 +65,17 @@ buttons_animais()
 function efeito_redes(){
 
     for (let index = 0; index < img_funcionario.length; index++) {
-
-        img_funcionario[index].addEventListener("mouseover",event=>{
-         event =   redes[index].style.height="15%"
-            setTimeout(() => {
-                i_redes[index].style.display="flex"
-                i_redes[index].style.opacity="1"
-            }, 50);
-        })
-
-        img_funcionario[index].addEventListener("mouseleave",()=>{
-            i_redes[index].style.display="none"
-            i_redes[index].style.opacity="0"
-            setTimeout(() => {
-                redes[index].style.height="0%"
-               
-            }, 50);
-           
-           
-               
-            
-            
-                
-        
-        })
+    if(window.screen.width >= 600){
+        img_funcionario[index].addEventListener("mouseover",()=>{
+            redes[index].style.transform="translateY(0px)"
+             
+          })
+  
+          img_funcionario[index].addEventListener("mouseleave",()=>{
+              redes[index].style.transform="translateY(60px)"      
+          })
+    }
+       
         
     }
 

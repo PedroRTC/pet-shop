@@ -39,9 +39,6 @@ body::-webkit-scrollbar-thumb{
  
 }
 
-
-
-
 #menu{
     margin: auto;
     position: fixed;
@@ -213,8 +210,6 @@ body::-webkit-scrollbar-thumb{
     background-color: #FC911E;
     color: white;
 }
-
-
 
 .todas_secao{
    margin: auto;
@@ -604,6 +599,7 @@ body::-webkit-scrollbar-thumb{
     background-color: rgba(255, 166, 0, 0.192);
     transition: all 0.7s;
     cursor: pointer;
+    overflow: hidden;
 }
 
 .img_funcionario:hover{
@@ -613,20 +609,24 @@ body::-webkit-scrollbar-thumb{
 
 .redes{
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
   width: 100%;
-  height: 0%;
-  background-color: rgba(0, 0, 0, 0.671);
+  height: 100%;
   transition: all 0.3s;
+  transform: translateY(60px);
+  
 } 
 
 .redes section{
+    display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px;
-    display: none;
-    opacity: 0;
+    width: 100%;
+    height: 50px;
+    gap: 40px;
+    background-color: rgba(0, 0, 0, 0.415);
+  
 }
 
 .redes i{
@@ -714,10 +714,6 @@ body::-webkit-scrollbar-thumb{
 #link_portifolio a:hover{
     color:blue;
 }
-
-
-
-
 
 @media screen and (max-width: 1300px) {
 
@@ -809,5 +805,14 @@ body::-webkit-scrollbar-thumb{
         width: 100%;
     }
 
+    
+
    
+}
+
+
+@media screen and (max-width:660px){
+    .redes{
+        transform: translateY(0px);
+    }
 }

@@ -33,8 +33,6 @@
 }
 
 
-
-
 .img_item{
  display: flex;
  align-items: top;
@@ -47,6 +45,7 @@
  background-repeat:no-repeat;
  transition: all 1s;
  background-color:#EBECF0 ;
+ overflow: hidden;
 }
 
 .img_item:hover{
@@ -57,9 +56,9 @@
 
 .img_item div{
   padding: 20px 15px;
-  transform: translateX(20px);
-  opacity: 0;
+  transform: translateX(60px);
   transition: all 0.5s;
+  background-color:transparent;
 }
 
 .img_item p{
@@ -105,4 +104,8 @@
     color: #333;
 }
 
-
+@media screen and (max-width:660px){
+    .img_item div{
+        transform: translateX(0px);
+    }
+}

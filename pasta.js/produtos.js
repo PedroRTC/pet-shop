@@ -30,7 +30,7 @@ init()
 
   
 function geraProduto(){
- produtos.map(pro=>{
+  produtos.map(pro=>{
      let div_item=document.createElement("div")
      let img_item=document.createElement("li")
      let div_buttons=document.createElement("div")
@@ -65,33 +65,22 @@ function geraProduto(){
      div_item.appendChild(preco_item)
      div_produto.appendChild(div_item)
 
+    if(window.screen.width >= 600){
+      div_item.addEventListener("mouseover",()=>{
 
-    
-        div_item.addEventListener("mouseover",()=>{
-             div_buttons.style.opacity="1"
-            div_buttons.style.transform="translateX(0px)"  
-             
-        })
+        div_buttons.style.transform="translateX(0px)"  
+          
+     })
 
+     div_item.addEventListener("mouseleave",()=>{
 
-        div_item.addEventListener("mouseleave",()=>{
-         div_buttons.style.transform="translateX(20px)"
-
-          setTimeout(() => {
-         div_buttons.style.opacity="0"
+       div_buttons.style.transform="translateX(60px)"  
       
-       }, 100);
-         
-         
-    })
-    
-    
-   
+     })
+    }
+          
 
-   
-      
-
-   })
+  })
 
 
 }
